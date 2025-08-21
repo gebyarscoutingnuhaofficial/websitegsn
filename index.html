@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Gebyar Scouting Nuha (GSN) III 2025 - SMP Nurul Halim Widasari
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Reset dan Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      :root {
+        --primary: #1a4d2d;
+        --secondary: #ff9e29;
+        --accent: #d83a3a;
+        --light: #ffffff;
+        --dark: #212529;
+        --cream: #fff9e6;
+        --brown: #8b4513;
+        --light-brown: #a86a3d;
+      }
+
+      body {
+        background-color: var(--light);
+        color: #333;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+      }
+
+      .section-title h2 {
+        font-size: 2.5rem;
+        color: var(--primary);
+        display: inline-block;
+        margin-bottom: 15px;
+        position: relative;
+      }
+
+      .section-title h2:after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 4px;
+        background: var(--secondary);
+        margin: 10px auto;
+        border-radius: 2px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background: var(--secondary);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(255, 158, 41, 0.3);
+      }
+
+      .btn:hover {
+        background: var(--primary);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Header Styles - Diperbaiki */
+      header {
+        background: linear-gradient(135deg, var(--primary) 0%, #2c7744 100%);
+        color: white;
+        padding: 12px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 48px;
+        margin-right: 12px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .logo-text h1 {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        color: white;
+        font-weight: 700;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      }
+
+      .logo-text span {
+        font-size: 0.75rem;
+        color: var(--secondary);
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 25px;
+        position: relative;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+        padding: 8px 0;
+        display: block;
+      }
+
+      nav ul li a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: var(--secondary);
+        transition: width 0.3s ease;
+        border-radius: 2px;
+      }
+
+      nav ul li a:hover:after {
+        width: 100%;
+      }
+
+      nav ul li a:hover {
+        color: var(--secondary);
+      }
+
+      .mobile-menu-btn {
+        display: none;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+      }
+
+      .mobile-menu-btn:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(
+            rgba(26, 77, 45, 0.85),
+            rgba(26, 77, 45, 0.9)
+          ),
+          url("image.png");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 150px 0 100px;
+        margin-top: 72px;
+        position: relative;
+      }
+
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero h1 {
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        opacity: 0.95;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .countdown {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+      }
+
+      .countdown-item {
+        margin: 0 12px;
+        background: rgba(255, 255, 255, 0.15);
+        padding: 18px;
+        border-radius: 12px;
+        min-width: 100px;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .countdown-number {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: white;
+      }
+
+      .countdown-label {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        color: var(--secondary);
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      /* About Section */
+      .about {
+        background: var(--cream);
+        position: relative;
+      }
+
+      .about-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+
+      .about-image {
+        flex: 1;
+        min-width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 5px solid var(--light);
+      }
+
+      .about-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .about-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .about-text h3 {
+        font-size: 2rem;
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+
+      .about-text p {
+        margin-bottom: 15px;
+        color: 555;
+      }
+
+      /* Events Section */
+      .events {
+        background: var(--light);
+      }
+
+      .events-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .event-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid #eee;
+      }
+
+      .event-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .event-image {
+        height: 200px;
+        overflow: hidden;
+      }
+
+      .event-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .event-card:hover .event-image img {
+        transform: scale(1.1);
+      }
+
+      .event-content {
+        padding: 20px;
+      }
+
+      .event-content h3 {
+        font-size: 1.5rem;
+        color: var(--primary);
+        margin-bottom: 10px;
+      }
+
+      .event-content p {
+        margin-bottom: 15px;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .event-meta {
+        display: flex;
+        justify-content: space-between;
+        color: #777;
+        font-size: 0.9rem;
+        margin-top: 15px;
+        flex-wrap: wrap;
+      }
+
+      .event-meta span {
+        margin-bottom: 5px;
+      }
+
+      /* Gallery Section */
+      .gallery {
+        background: var(--cream);
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+      }
+
+      .gallery-item {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .gallery-image {
+        height: 250px;
+        overflow: hidden;
+      }
+
+      .gallery-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .gallery-item:hover .gallery-image img {
+        transform: scale(1.1);
+        transition: transform 0.5s ease;
+      }
+
+      .gallery-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        color: white;
+        padding: 20px;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover .gallery-info {
+        transform: translateY(0);
+      }
+
+      .gallery-info h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+      }
+
+      .gallery-info p {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        line-height: 1.4;
+      }
+
+      /* Sambutan Section - DIPERBAIKI */
+      .sambutan {
+        background: var(--light);
+        padding: 60px 0;
+      }
+
+      .sambutan-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .sambutan-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .sambutan-photo {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 25px;
+        border: 5px solid var(--primary);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--cream);
+      }
+
+      .sambutan-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .sambutan-text {
+        background: var(--cream);
+        padding: 35px;
+        border-radius: 12px;
+        position: relative;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        margin-top: 20px;
+        max-width: 90%;
+      }
+
+      .sambutan-text:before {
+        content: "";
+        font-size: 70px;
+        color: var(--primary);
+        opacity: 0.15;
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        font-family: Georgia, serif;
+        line-height: 1;
+      }
+
+      .sambutan-text p {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 18px;
+        position: relative;
+        z-index: 1;
+        text-align: left;
+      }
+
+      .sambutan-author {
+        font-weight: 700;
+        color: var(--primary);
+        margin-top: 25px;
+        font-style: italic;
+        font-size: 1.1rem;
+      }
+
+      /* Video Section - DIPERBAIKI */
+      .video-section {
+        background: var(--cream);
+        padding: 60px 0;
+      }
+
+      .video-container {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+      }
+
+      .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        height: 0;
+        overflow: hidden;
+      }
+
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      /* Join Section */
+      .join {
+        background: linear-gradient(to right, var(--primary), #2c7744);
+        color: white;
+        text-align: center;
+        position: relative;
+      }
+
+      .join-content {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+      }
+
+      .join h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .join p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        opacity: 0.9;
+        line-height: 1.6;
+      }
+
+      /* Contact Section */
+      .contact {
+        background: var(--cream);
+      }
+
+      .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+
+      .contact-info {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .contact-info h3 {
+        font-size: 1.8rem;
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+
+      .contact-details {
+        margin-bottom: 30px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .contact-icon {
+        width: 40px;
+        height: 40px;
+        background: var(--primary);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .social-link {
+        width: 45px;
+        height: 45px;
+        background: var(--primary);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+      }
+
+      .social-link:hover {
+        background: var(--secondary);
+        transform: translateY(-5px);
+      }
+
+      .contact-form {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+        color: var(--primary);
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+      }
+
+      .form-control:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(26, 77, 45, 0.1);
+      }
+
+      textarea.form-control {
+        min-height: 150px;
+        resize: vertical;
+      }
+
+      /* Footer */
+      footer {
+        background: var(--brown);
+        color: white;
+        padding: 60px 0 30px;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-column {
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .footer-column h3 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+        color: var(--secondary);
+      }
+
+      .footer-column h3:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: var(--secondary);
+      }
+
+      .footer-links {
+        list-style: none;
+        margin-top: 15px;
+      }
+
+      .footer-links li {
+        margin-bottom: 10px;
+      }
+
+      .footer-links a {
+        color: #e0e0e0;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: inline-block;
+      }
+
+      .footer-links a:hover {
+        color: var(--secondary);
+        transform: translateX(5px);
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid var(--light-brown);
+        font-size: 0.9rem;
+        color: #e0e0e0;
+        line-height: 1.6;
+      }
+
+      /* Music Player */
+      .music-player {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        background: var(--light);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .music-player:hover {
+        transform: scale(1.1);
+      }
+
+      .music-player i {
+        font-size: 24px;
+        color: var(--primary);
+      }
+
+      .music-controls {
+        display: none;
+      }
+
+      /* Responsive Styles - DIPERBAIKI */
+      @media (max-width: 992px) {
+        .hero h1 {
+          font-size: 2.8rem;
+        }
+
+        nav ul {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: linear-gradient(135deg, var(--primary) 0%, #2c7744 100%);
+          flex-direction: column;
+          padding: 20px;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          z-index: 1000;
+        }
+
+        nav ul.active {
+          display: flex;
+        }
+
+        nav ul li {
+          margin: 12px 0;
+          margin-left: 0;
+        }
+
+        .mobile-menu-btn {
+          display: block;
+        }
+
+        .countdown-item {
+          margin: 0 8px;
+          min-width: 80px;
+          padding: 15px;
+        }
+
+        .countdown-number {
+          font-size: 2rem;
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .sambutan-photo {
+          width: 180px;
+          height: 180px;
+        }
+
+        .sambutan-text {
+          padding: 25px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          padding: 120px 0 80px;
+        }
+
+        .hero h1 {
+          font-size: 2.2rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        .section-title h2 {
+          font-size: 2rem;
+        }
+
+        .countdown {
+          flex-wrap: wrap;
+        }
+
+        .countdown-item {
+          margin: 8px;
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .sambutan-photo {
+          width: 160px;
+          height: 160px;
+        }
+
+        .sambutan-text p {
+          font-size: 1rem;
+        }
+
+        .contact-container {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .logo-text h1 {
+          font-size: 1.2rem;
+        }
+
+        .hero h1 {
+          font-size: 1.8rem;
+        }
+
+        .countdown-number {
+          font-size: 1.5rem;
+        }
+
+        .countdown-item {
+          min-width: 60px;
+          padding: 10px;
+        }
+
+        .logo img {
+          height: 40px;
+        }
+
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .sambutan-text {
+          padding: 20px;
+        }
+
+        .sambutan-photo {
+          width: 140px;
+          height: 140px;
+        }
+
+        .footer-content {
+          flex-direction: column;
+          gap: 30px;
+        }
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 1s ease forwards;
+      }
+
+      .delay-1 {
+        animation-delay: 0.2s;
+      }
+      .delay-2 {
+        animation-delay: 0.4s;
+      }
+      .delay-3 {
+        animation-delay: 0.6s;
+      }
+      .delay-4 {
+        animation-delay: 0.8s;
+      }
+      .delay-5 {
+        animation-delay: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Music Player -->
+    <audio id="bgMusic" loop>
+      <!-- Anda dapat mengganti sumber audio dengan file musik Anda -->
+      <source src="gsn.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="music-player" id="musicToggle">
+      <i class="fas fa-pause" id="musicIcon"></i>
+    </div>
+
+    <!-- Header - Diperbaiki -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img src="logo.png" alt="Logo GSN" />
+          <div class="logo-text">
+            <h1>Gebyar Scouting Nuha</h1>
+            <span>GSN III 2025</span>
+          </div>
+        </div>
+        <nav>
+          <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul id="navMenu">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#events">Kegiatan</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#join">Bergabung</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <h1 class="fade-in">Gebyar Scouting Nuha III 2025</h1>
+        <p class="fade-in delay-1">
+          Kompetisi Pramuka Penggalang SD/MI Se-Kabupaten Indramayu Open Tahun
+          2025 Yang Diselenggarakan Oleh <b>SMP NURUL HALIM WIDASARI</b>
+        </p>
+        <div class="countdown fade-in delay-2">
+          <div class="countdown-item">
+            <div class="countdown-number" id="days">00</div>
+            <div class="countdown-label">Hari</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="hours">00</div>
+            <div class="countdown-label">Jam</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="minutes">00</div>
+            <div class="countdown-label">Menit</div>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="seconds">00</div>
+            <div class="countdown-label">Detik</div>
+          </div>
+        </div>
+        <a href="#join" class="btn fade-in delay-3">Bergabung Sekarang</a>
+      </div>
+    </section>
+
+    <!-- Sambutan Section - DIPERBAIKI -->
+    <section class="sambutan">
+      <div class="container sambutan-container">
+        <div class="section-title fade-in">
+          <h2>Sambutan dari K.A Mabigus</h2>
+        </div>
+        <div class="sambutan-content fade-in delay-1">
+          <div class="sambutan-photo">
+            <img
+              src="mabigus.jpg"
+              alt="Foto Ka Mabigus"
+              style="object-fit: cover; width: 100%; height: 100%"
+            />
+          </div>
+          <div class="sambutan-text">
+            <p>
+              "Selamat datang di Gebyar Scouting Nuha III 2025. Kegiatan ini
+              merupakan wadah bagi para pramuka penggalang SD/MI Se-Kabupaten
+              Indramayu Open untuk mengembangkan bakat, kreativitas, dan
+              karakter kepemimpinan. Melalui berbagai perlombaan dan kegiatan,
+              kami berharap dapat mencetak generasi muda yang tangguh, mandiri,
+              dan berakhlak mulia."
+            </p>
+            <p>
+              "Mari kita bersama-sama menyemarakkan event ini dengan semangat
+              persaudaraan, sportivitas, dan kebersamaan. Selamat berkompetisi
+              dan jadilah pramuka terbaik!"
+            </p>
+            <div class="sambutan-author">
+              <p>Agus Salim S.Pd - K.A Mabigus SMP Nurul Halim Widasari</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Tentang GSN III</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-image fade-in">
+            <img src="panitia.jpg" alt="Kegiatan Pramuka" />
+          </div>
+          <div class="about-text fade-in delay-1">
+            <h3>Membangun Generasi Muda yang Berkarakter dan Mandiri</h3>
+            <p>
+              Gebyar Scouting Nuha (GSN) III 2025 adalah event setiap 2 tahun
+              yang diselenggarakan oleh SMP Nurul Halim Widasari untuk
+              mengembangkan bakat dan kemampuan para pramuka penggalang SD/MI Se
+              Kabupaten Indramayu Open dalam berbagai bidang.
+            </p>
+            <p>
+              Acara ini dirancang untuk melatih leadership, teamwork,
+              kreativitas, dan kemandirian peserta melalui berbagai kegiatan
+              yang menantang dan mendidik.
+            </p>
+            <p>
+              GSN III 2025 mengusung tema "Gebyar Scouting Nuha :Satu Utuh Ceria
+              Berkarya" yang bertujuan untuk menekankan persatuan dan
+              kebersamaan seluruh peserta pramuka penggalang. Walaupun berasal
+              dari SD/MI yang berbeda-beda, semuanya menyatu dalam satu wadah
+              kebersamaan pramuka.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events" id="events">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Kegiatan GSN III</h2>
+        </div>
+        <div class="events-grid">
+          <div class="event-card fade-in">
+            <div class="event-image">
+              <img src="keagamaan.jpg" alt="Upcara Pembukaan" />
+            </div>
+            <div class="event-content">
+              <h3>NHC Keagamaan</h3>
+              <p>
+                Nurul Halim Competition Bidang Keagamaan yang menguji bakat
+                anggota penggalang yang berkaitan dengan keagamaan
+              </p>
+              <div class="event-meta">
+                <span><i class="fas fa-calendar"></i> 19 November 2023</span>
+                <span
+                  ><i class="fas fa-map-marker-alt"></i> Balai Pertemuan &
+                  Masjid Jami Nurul Falah Desa UjungJaya</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="event-card fade-in delay-1">
+            <div class="event-image">
+              <img src="skill.jpg" alt="Pioneering" />
+            </div>
+            <div class="event-content">
+              <h3>NHC Scouting Skill</h3>
+              <p>
+                Kompetisi yang menguji kreativitas dan keterampilan teknis para
+                anggota Penggalang.
+              </p>
+              <div class="event-meta">
+                <span><i class="fas fa-calendar"></i> 19 November 2023</span>
+                <span><i class="fas fa-map-marker-alt"></i> Ruang Kelas </span>
+              </div>
+            </div>
+          </div>
+          <div class="event-card fade-in delay-2">
+            <div class="event-image">
+              <img src="ketangkasan.jpg" alt="PBB" />
+            </div>
+            <div class="event-content">
+              <h3>Lomba PBB & Yelling</h3>
+              <p>
+                Kompetisi baris-berbaris yang menuntut ketelitian, kedisiplinan,
+                dan kekompakan tim.
+              </p>
+              <div class="event-meta">
+                <span><i class="fas fa-calendar"></i> 19 November 2023</span>
+                <span
+                  ><i class="fas fa-map-marker-alt"></i> Lap. Utama Smp Nurul
+                  Halim Widasari
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Galeri Kegiatan</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in">
+            <div class="gallery-image">
+              <img src="bergilir.jpg" alt="Penyerahan Piala Bergilir" />
+            </div>
+            <div class="gallery-info">
+              <h3>Penyerahan Piala Bergilir</h3>
+              <p>
+                Penyerahan Piala Bergilir Dari SD/MI yang mendapatkanya, Pada
+                Saat GSN I 2019 Kepada Panitia GSN II 2023
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item fade-in delay-1">
+            <div class="gallery-image">
+              <img src="dangdutan.jpg" alt="dangdutan" />
+            </div>
+            <div class="gallery-info">
+              <h3>Panggung Hiburan</h3>
+              <p>
+                Pengisi waktu luang sembari menunggu panitia merekap nilai, kita
+                memperbolehkan para anggota penggalang menunjukan Minat Dan
+                Bakat Mereka Pada Panggung Hiburan
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item fade-in delay-2">
+            <div class="gallery-image">
+              <img src="image.png" alt="Upacara" />
+            </div>
+            <div class="gallery-info">
+              <h3>Upacara Pembukaan</h3>
+              <p>
+                Upacara pembukaan yang dilaksanakan dengan khidmat dan penuh
+                semangat kebangsaan.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item fade-in delay-3">
+            <div class="gallery-image">
+              <img src="juritangkas.jpg" alt="juri" />
+            </div>
+            <div class="gallery-info">
+              <h3>Juri Lomba Ketangkasan</h3>
+              <p>
+                Kami Selalu Konsisten Menghadirkan Para Juri Yang memiliki bakat
+                dan keahlian Yang Relevan Sesuai Dengan Bidang Lomba Yang Ada
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item fade-in delay-4">
+            <div class="gallery-image">
+              <img src="kwaran.jpg" alt="kwaran" />
+            </div>
+            <div class="gallery-info">
+              <h3>K.A Mabigus Dan Ketua KWARAN Widasari</h3>
+              <p>
+                Bpk Agus Salim & Bapak Suwandi Yang Tertangkap Kamera Sedang
+                Bersalaman Dengan Para Peserta GSN II 2023
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item fade-in delay-5">
+            <div class="gallery-image">
+              <img src="Piala.jpg" alt="Piala Bergilir" />
+            </div>
+            <div class="gallery-info">
+              <h3>Penyerahan Paiala bergilir</h3>
+              <p>Kepada Peraih Piala Bergilir Pada GSN II 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section - DIPERBAIKI -->
+    <section class="video-section">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Video GSN</h2>
+        </div>
+        <div class="video-container fade-in delay-1">
+          <div class="video-wrapper">
+            <!-- Ganti dengan ID video YouTube Anda -->
+            <iframe
+              src="https://www.youtube.com/embed/PFWEXMLJoE0?autoplay=1&mute=1&loop=1&playlist=PFWEXMLJoE0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join Section -->
+    <section class="join" id="join">
+      <div class="container join-content fade-in">
+        <h2>Siap untuk Bergabung?</h2>
+        <p>
+          Jangan lewatkan kesempatan untuk menjadi bagian dari Gebyar Scouting
+          Nuha III 2025. Daftarkan GUGUS DEPAN Anda sekarang!
+        </p>
+        <a href="https://s.id/DaftarGSNtiga2025" class="btn">Daftar Sekarang</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-title fade-in">
+          <h2>Kontak Kami</h2>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info fade-in">
+            <h3>Informasi Kontak</h3>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4>Lokasi</h4>
+                  <p>
+                    SMP Nurul Halim Widasari<br />Jl. UjungJaya Lama No. 212,
+                    Widasari, Indramayu
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h4>Telepon</h4>
+                  <p>+62 838-2767-0337</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>gebyarscoutingnuha@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <h3>Media Sosial</h3>
+            <div class="social-links">
+              <a href="https://wa.me/+6283827670337" class="social-link"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://instagram.com/gebyarscoutingnuha"
+                class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/share/1MpMv2zywR/"
+                class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://youtube.com/@smpnurulhalimwidasariindramayu?si=KIJDOudhV0x4tXFp"
+                class="social-link"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-form fade-in delay-1">
+            <h3>Kirim Pesan</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subjek</label>
+                <input type="text" id="subject" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Tentang GSN</h3>
+            <p>
+              Gebyar Scouting Nuha adalah event yang di adakan setiap dua tahun
+              sekali, yang diselenggarakan oleh SMP Nurul Halim Widasari untuk
+              mengembangkan bakat dan kemampuan para pramuka Penggalang SD/MI.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Link Cepat</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#about">Tentang</a></li>
+              <li><a href="#events">Kegiatan</a></li>
+              <li><a href="#gallery">Galeri</a></li>
+              <li><a href="#join">Bergabung</a></li>
+              <li><a href="#contact">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Kegiatan</h3>
+            <ul class="footer-links">
+              <li><a href="#">NHC KEAGAMAAN</a></li>
+              <li><a href="#">NHC SCOUTING SKILL</a></li>
+              <li><a href="#">Lomba PBB & YELLING</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Kontak</h3>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> SMP Nurul Halim Widasari
+              </li>
+              <li><i class="fas fa-phone"></i> +62 838-2767-0337</li>
+              <li>
+                <i class="fas fa-envelope"></i> gebyarscoutingnuha@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Gebyar Scouting Nuha III - SMP Nurul Halim Widasari. All
+            Rights Reserved.
+          </p>
+          <p>
+            Website Ini dipersembahkan Oleh ALUMNI PANHALRI Tahun 2020 (A.U)
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Countdown Timer - Diperbarui untuk 2 November 2025
+      function updateCountdown() {
+        const targetDate = new Date("November 2, 2025 08:00:00").getTime();
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("hours").innerText = hours
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("minutes").innerText = minutes
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("seconds").innerText = seconds
+          .toString()
+          .padStart(2, "0");
+      }
+
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // Mobile Menu Toggle - DIPERBAIKI
+      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+      const navMenu = document.querySelector("#navMenu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        // Tambahkan animasi hamburger icon
+        const icon = mobileMenuBtn.querySelector("i");
+        if (navMenu.classList.contains("active")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
+        } else {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
+      });
+
+      // Tutup menu mobile saat mengklik link
+      document.querySelectorAll("#navMenu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+          const icon = mobileMenuBtn.querySelector("i");
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        });
+      });
+
+      // Smooth Scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+
+            // Close mobile menu if open
+            navMenu.classList.remove("active");
+            const icon = mobileMenuBtn.querySelector("i");
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+          }
+        });
+      });
+
+      // Form Submission
+      const contactForm = document.getElementById("contactForm");
+
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Get form values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        // Simple validation
+        if (name && email && subject && message) {
+          // In a real application, you would send this data to a server
+          alert(
+            "Terima kasih! Pesan Anda telah berhasil dikirim. Kami akan segera menghubungi Anda."
+          );
+          contactForm.reset();
+        } else {
+          alert("Harap lengkapi semua field!");
+        }
+      });
+
+      // Sticky Header
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+          header.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.15)";
+        } else {
+          header.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
+        }
+      });
+
+      // Music Player Functionality
+      const bgMusic = document.getElementById("bgMusic");
+      const musicToggle = document.getElementById("musicToggle");
+      const musicIcon = document.getElementById("musicIcon");
+
+      // Auto play music when page loads
+      window.addEventListener("load", function () {
+        bgMusic.volume = 0.5; // Set volume to 50%
+
+        // Try to autoplay
+        const playPromise = bgMusic.play();
+
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              // Automatic playback started!
+              musicIcon.classList.remove("fa-play");
+              musicIcon.classList.add("fa-pause");
+            })
+            .catch((error) => {
+              // Auto-play was prevented
+              console.log("Autoplay prevented:", error);
+              musicIcon.classList.remove("fa-pause");
+              musicIcon.classList.add("fa-play");
+            });
+        }
+      });
+
+      // Toggle music play/pause
+      musicToggle.addEventListener("click", function () {
+        if (bgMusic.paused) {
+          bgMusic.play();
+          musicIcon.classList.remove("fa-play");
+          musicIcon.classList.add("fa-pause");
+        } else {
+          bgMusic.pause();
+          musicIcon.classList.remove("fa-pause");
+          musicIcon.classList.add("fa-play");
+        }
+      });
+
+      // Animation on scroll
+      function checkScroll() {
+        const elements = document.querySelectorAll(".fade-in");
+
+        elements.forEach((element) => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+
+          if (elementPosition < screenPosition) {
+            element.style.opacity = 1;
+            element.style.transform = "translateY(0)";
+          }
+        });
+      }
+
+      // Initialize animation states
+      document.querySelectorAll(".fade-in").forEach((element) => {
+        element.style.opacity = 0;
+        element.style.transform = "translateY(20px)";
+        element.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+      });
+
+      window.addEventListener("scroll", checkScroll);
+      window.addEventListener("load", checkScroll);
+    </script>
+  </body>
+</html>
